@@ -1,12 +1,4 @@
 {
-  "name": "oauth-hub",
-  "type": "module",
-  "version": "1.0.0",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "name": "auth-hub",
+  "version": "1.0.0"
 }
