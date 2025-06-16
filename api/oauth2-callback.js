@@ -15,7 +15,8 @@ export default function handler(req, res) {
     if (!isAllowed) return res.status(403).send("Untrusted target");
 
     const queryString = new URLSearchParams({ ...rest, state }).toString();
-    return res.redirect(307, `${url.origin}/oauth2/callback?${queryString}`);
+    return res.redirect(307, `${url.href}?${queryString}`);
+
   } catch {
     return res.status(400).send("Invalid state");
   }
